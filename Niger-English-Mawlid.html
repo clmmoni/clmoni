@@ -40,17 +40,22 @@
    <b><br>
         <span id="countdowntimer" style="color:red;">4548</span>
    </b><br> People have been credited for this fund.<br>
-   <script type="text/javascript">
-       var timeleft = 4548; // starting value
-       var downloadTimer = setInterval(function(){
-           timeleft = timeleft - 1; // decrease by 1 each second
-           document.getElementById('countdowntimer').textContent = timeleft;
-           if (timeleft <= 0) {
-               clearInterval(downloadTimer);
-               document.getElementById('countdowntimer').textContent = "Expired";
-           }
-       }, 1000);
-   </script>
+</div>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        var timeleft = 4548; // starting value
+        var downloadTimer = setInterval(function(){
+            timeleft = timeleft - 1; // decrease by 1 each second
+            document.getElementById('countdowntimer').textContent = timeleft;
+            if (timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById('countdowntimer').textContent = "Expired";
+            }
+        }, 1000);
+    });
+</script>
+
 </div>
 
 <div class="post" width="100%">
